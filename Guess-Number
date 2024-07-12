@@ -1,0 +1,25 @@
+
+                            # Guessing number from user(Small Game)
+
+import random
+
+target=random.randint(1,500)
+
+
+while True:
+    user_choice=input("Guessing target or Quit(Q):")
+    if (user_choice=="Q"):
+        break
+    user_choice=int(user_choice)
+    if(user_choice==target):
+        print("Success: Your Guessing Number is Correct.....")
+        break
+    elif(target>user_choice):
+        print("You enter a small number Guess the big number:")
+    else:
+        print("You enter a big number Guess the small number:")
+
+
+
+
+print("______GAME OVER______")
